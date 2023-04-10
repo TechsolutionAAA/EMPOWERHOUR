@@ -5,7 +5,7 @@
   "scripts": {
     "format": "prettier --write 'src/**/*.js'",
     "dev": "node_modules/.bin/ts-node-dev --respawn --notify false --transpile-only --ignore-watch node_modules -- src/index.ts",
-    "dev:nodemon": "nodemon --watch dist dist/index.js",
+    "start": "nodemon --watch dist dist/index.js",
     "watch": "tsc -w src/index.ts",
     "build": "tsc",
     "production:start": "cross-env NODE_ENV=production node dist/index.js",
